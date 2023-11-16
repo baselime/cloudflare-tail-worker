@@ -7,7 +7,7 @@ This Cloudflare worker is designed to seamlessly transmit Cloudflare logs to Bas
 Before deploying the Cloudflare Tail Worker, ensure you have the following:
 
 - **BASELIME_API_KEY**: Your Baselime API key.
-- **CF_WORKER_NAME**: The name of the Cloudflare Worker you want to get logs for 
+- **CF_WORKER_NAME**: The name of the Cloudflare Worker to tail
 
 ## Deployment
 
