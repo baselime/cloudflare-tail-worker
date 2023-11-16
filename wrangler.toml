@@ -49,7 +49,3 @@ compatibility_date = "2023-10-30"
 # [[migrations]]
 # tag = "v1"
 # new_classes = ["MyDurableObject"]
-[vars]
-BASELIME_API_KEY='***REMOVED***'
-BASELIME_API_URL='https://cloudflare.baselime.cc/v1'
-CF_WORKER_NAME='beep-boop'
