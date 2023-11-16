@@ -14,4 +14,4 @@ Before deploying the Cloudflare Tail Worker, ensure you have the following:
 1. **Set Environment Variables**: Add the required environment variables to your deployment environment.
 2. **Build Project**: Run `npm run build` to build the cloudflare worker
 3. **Deploy Worker**: Programatically deploy the worker from `dist/index.js`.
-4. **Initiate Log Transmission**: Set up the worker to tail the desired worker 
+4. **Start Tailing**: Programatically [Start Tailing](https://developers.cloudflare.com/api/operations/worker-tail-logs-start-tail)
