@@ -1,13 +1,17 @@
- Cloudflare Tail worker that sends data to Baselime.
+# Cloudflare Tail Worker for Baselime
 
- This worker sends Cloudflare logs to Baselime for analysis. To use this worker, you'll need to set the following environment variables:
+This Cloudflare worker is designed to seamlessly transmit Cloudflare logs to Baselime.
 
- - BASELIME_API_KEY: Your Baselime API key.
- - BASELIME_PROJECT_ID: The ID of the Baselime project you want to send logs to.
+## Setup
 
- Once you've set these environment variables, deploy this worker to your Cloudflare account and it will start sending logs to Baselime.
-# FILEPATH
-"""
-This function takes in a list of integers and returns the sum of all even numbers in the list.
-If the list is empty or contains no even numbers, the function returns 0.
-"""
+Before deploying the Cloudflare Tail Worker, ensure you have the following:
+
+- **BASELIME_API_KEY**: Your Baselime API key.
+- **CF_WORKER_NAME**: The name of the Cloudflare Worker you want to get logs for 
+
+## Deployment
+
+1. **Set Environment Variables**: Add the required environment variables to your deployment environment.
+2. **Build Project**: Run `npm run build` to build the cloudflare worker
+3. **Deploy Worker**: Programatically deploy the worker from `dist/index.js`.
+4. **Initiate Log Transmission**: Set up the worker to tail the desired worker 
